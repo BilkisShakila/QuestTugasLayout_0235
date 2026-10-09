@@ -107,4 +107,11 @@ fun ProfileCard(
     location: String,
     backgroundColor: Color,
     logoResId: Int
-)
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(90.dp),
+        shape = RoundedCornerShape(12.dp),
+        colors = CardDefaults.cardColors(containerColor = backgroundColor)
+    ) {

@@ -29,3 +29,19 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Spacer(modifier = Modifier.height(8.dp))
+
+        // Judul Utama (Mengambil dari strings.xml agar tidak hardcode)
+        Text(
+            text = stringResource(id = R.string.app_title),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Black
+        )
+        Text(
+            text = stringResource(id = R.string.app_subtitle),
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Medium,
+            color = Color.Black
+        )
+
+        Spacer(modifier = Modifier.height(24.dp))

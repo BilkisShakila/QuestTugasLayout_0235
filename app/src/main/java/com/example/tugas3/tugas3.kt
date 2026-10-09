@@ -87,3 +87,15 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
             backgroundColor = colorResource(id = R.color.card_green),
             logoResId = R.drawable.logo_umy
         )
+        // Mendorong teks copyright ke bawah layar
+        Spacer(modifier = Modifier.weight(1f))
+
+        // Teks Copyright (Mengambil dari strings.xml)
+        Text(
+            text = stringResource(id = R.string.copyright_text),
+            fontSize = 12.sp,
+            color = Color.Gray,
+            modifier = Modifier.padding(bottom = 8.dp)
+        )
+    }
+}

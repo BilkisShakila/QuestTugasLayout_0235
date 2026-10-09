@@ -16,3 +16,8 @@
     <string name="card3_name">Rachel venya</string>
     <string name="card3_phone">085436874190</string>
     <string name="card3_location">kaliurang, Sleman</string>
+
+    <!-- Data Card 4 -->
+    <string name="card4_name">Azizah Nur Khamid</string>
+    <string name="card4_phone">085436874190</string>
+    <string name="card4_location">Seturan, Sleman</string>

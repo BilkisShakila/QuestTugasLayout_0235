@@ -6,3 +6,8 @@
     <!-- Data Card 1 -->
     <string name="card1_name">Bilkis Aqilatusshakila</string>
     <string name="card1_location">Palagan, Sleman</string>
+
+    <!-- Data Card 2 -->
+    <string name="card2_name">Maulina Khamidah</string>
+    <string name="card2_phone">085436874190</string>
+    <string name="card2_location">Kasihan, Bantul</string>

@@ -11,3 +11,8 @@
     <string name="card2_name">Maulina Khamidah</string>
     <string name="card2_phone">085436874190</string>
     <string name="card2_location">Kasihan, Bantul</string>
+
+    <!-- Data Card 3 -->
+    <string name="card3_name">Rachel venya</string>
+    <string name="card3_phone">085436874190</string>
+    <string name="card3_location">kaliurang, Sleman</string>

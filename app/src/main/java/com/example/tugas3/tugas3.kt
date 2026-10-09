@@ -153,4 +153,12 @@ fun ProfileCard(
                     fontSize = 13.sp
                 )
             }
-            }
+            // Logo Kanan
+            Image(
+                painter = painterResource(id = logoResId),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(45.dp)
+            )
+        }
+    }
+}

@@ -14,11 +14,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-// 1. Fungsi Utama Tampilan yang dipanggil oleh MainActivity
+// 1. Fungsi Utama Tampilan
 @Composable
 fun ActivityPertama(modifier: Modifier = Modifier) {
     Column(
@@ -30,7 +31,7 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
     ) {
         Spacer(modifier = Modifier.height(8.dp))
 
-        // Judul Utama (Mengambil dari strings.xml agar tidak hardcode)
+        // Judul Utama
         Text(
             text = stringResource(id = R.string.app_title),
             fontSize = 24.sp,
@@ -46,13 +47,14 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        // Card 1: Bilkis Aqilatusshakila
+        // Card 1: Bilkis Aqilatusshakila (Menggunakan font Cursive/Latin & tanpa nomor telepon)
         ProfileCard(
             name = stringResource(id = R.string.card1_name),
             phone = null,
             location = stringResource(id = R.string.card1_location),
             backgroundColor = colorResource(id = R.color.card_gray),
-            logoResId = R.drawable.logo_umy
+            logoResId = R.drawable.logo_umy,
+            fontFamily = FontFamily.Cursive // Mengubah font menjadi gaya latin/kursif
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -87,10 +89,11 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
             backgroundColor = colorResource(id = R.color.card_green),
             logoResId = R.drawable.logo_umy
         )
+
         // Mendorong teks copyright ke bawah layar
         Spacer(modifier = Modifier.weight(1f))
 
-        // Teks Copyright (Mengambil dari strings.xml)
+        // Teks Copyright
         Text(
             text = stringResource(id = R.string.copyright_text),
             fontSize = 12.sp,
@@ -99,14 +102,16 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
         )
     }
 }
-// 2. Fungsi Reusable Card (Terpisah dari fungsi utama sesuai aturan tugas)
+
+// 2. Fungsi Reusable Card dengan tambahan parameter fontFamily
 @Composable
 fun ProfileCard(
     name: String,
     phone: String?,
     location: String,
     backgroundColor: Color,
-    logoResId: Int
+    logoResId: Int,
+    fontFamily: FontFamily = FontFamily.Default // Default-nya font biasa
 ) {
     Card(
         modifier = Modifier
@@ -128,6 +133,7 @@ fun ProfileCard(
                 contentDescription = "Logo UMY",
                 modifier = Modifier.size(45.dp)
             )
+
             // Teks Informasi (Nama, Telepon, Lokasi)
             Column(
                 modifier = Modifier
@@ -138,7 +144,8 @@ fun ProfileCard(
                     text = name,
                     color = Color.White,
                     fontWeight = FontWeight.Bold,
-                    fontSize = 18.sp
+                    fontSize = 20.sp, // Sedikit diperbesar agar gaya latinnya makin terlihat jelas
+                    fontFamily = fontFamily // Menerapkan font latin/kursif
                 )
                 if (!phone.isNullOrEmpty()) {
                     Text(
@@ -150,9 +157,11 @@ fun ProfileCard(
                 Text(
                     text = location,
                     color = Color.White,
-                    fontSize = 13.sp
+                    fontSize = 13.sp,
+                    fontFamily = fontFamily // Menerapkan font yang sama ke teks lokasi
                 )
             }
+
             // Logo Kanan
             Image(
                 painter = painterResource(id = logoResId),

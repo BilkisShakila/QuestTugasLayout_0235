@@ -147,4 +147,10 @@ fun ProfileCard(
                         fontSize = 13.sp
                     )
                 }
+                Text(
+                    text = location,
+                    color = Color.White,
+                    fontSize = 13.sp
+                )
+            }
             }

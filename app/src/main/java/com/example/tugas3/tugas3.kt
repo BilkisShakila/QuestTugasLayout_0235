@@ -134,3 +134,10 @@ fun ProfileCard(
                     .weight(1f)
                     .padding(horizontal = 12.dp)
             ) {
+                Text(
+                    text = name,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 18.sp
+                )
+            }

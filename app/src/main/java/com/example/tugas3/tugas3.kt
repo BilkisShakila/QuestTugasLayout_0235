@@ -99,3 +99,12 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
         )
     }
 }
+// 2. Fungsi Reusable Card (Terpisah dari fungsi utama sesuai aturan tugas)
+@Composable
+fun ProfileCard(
+    name: String,
+    phone: String?,
+    location: String,
+    backgroundColor: Color,
+    logoResId: Int
+)

@@ -128,3 +128,9 @@ fun ProfileCard(
                 contentDescription = "Logo UMY",
                 modifier = Modifier.size(45.dp)
             )
+            // Teks Informasi (Nama, Telepon, Lokasi)
+            Column(
+                modifier = Modifier
+                    .weight(1f)
+                    .padding(horizontal = 12.dp)
+            ) {

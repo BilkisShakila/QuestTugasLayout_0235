@@ -21,3 +21,7 @@
     <string name="card4_name">Azizah Nur Khamid</string>
     <string name="card4_phone">085436874190</string>
     <string name="card4_location">Seturan, Sleman</string>
+
+    <!-- Copyright -->
+    <string name="copyright_text">Copyright, 2026</string>
+</resources>

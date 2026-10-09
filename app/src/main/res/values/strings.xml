@@ -2,3 +2,7 @@
     <string name="app_name">Praktikum3</string>
     <string name="app_title">Teknologi Informasi</string>
     <string name="app_subtitle">Universitas Muhammadiyah Yogyakarta</string>
+
+    <!-- Data Card 1 -->
+    <string name="card1_name">Bilkis Aqilatusshakila</string>
+    <string name="card1_location">Palagan, Sleman</string>

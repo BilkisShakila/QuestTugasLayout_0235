@@ -140,4 +140,11 @@ fun ProfileCard(
                     fontWeight = FontWeight.Bold,
                     fontSize = 18.sp
                 )
+                if (!phone.isNullOrEmpty()) {
+                    Text(
+                        text = phone,
+                        color = Color.White,
+                        fontSize = 13.sp
+                    )
+                }
             }

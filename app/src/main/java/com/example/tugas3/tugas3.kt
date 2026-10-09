@@ -122,4 +122,9 @@ fun ProfileCard(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-    }
+            // Logo Kiri
+            Image(
+                painter = painterResource(id = logoResId),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(45.dp)
+            )

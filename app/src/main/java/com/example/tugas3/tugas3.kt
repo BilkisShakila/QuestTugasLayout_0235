@@ -78,3 +78,12 @@ fun ActivityPertama(modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.height(16.dp))
+
+        // Card 4: Azizah Nur Khamid
+        ProfileCard(
+            name = stringResource(id = R.string.card4_name),
+            phone = stringResource(id = R.string.card4_phone),
+            location = stringResource(id = R.string.card4_location),
+            backgroundColor = colorResource(id = R.color.card_green),
+            logoResId = R.drawable.logo_umy
+        )
